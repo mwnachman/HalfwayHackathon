@@ -1,4 +1,4 @@
-  
+   
 // var TS = "Taylor Swift"
 // var Roy = "Rachel Roy"
 // var Ray = "Rachael Ray"
@@ -24,8 +24,20 @@
 // 	document.getElementById(name).style.width = "0";
 // }
 
+function reward(person) {
+	document.getElementById('questions').setAttribute('class', 'invisible');
+	document.getElementById('result').setAttribute('class', 'visible');
+	if ( person === Rihanna ) {
+		document.getElementById('reward').setAttribute("src", "images/lemon1.gif");
+	}
+	else if ( person === Mya ) {
+		document.getElementById('reward').setAttribute("src", "images/lemon1.gif");
+	}
+}
+
 
 var lightq2 = function () {
+	$('#initial').slideUp(1000);
 	// delete array[1];
 	// delete array[2];
 	// delete array[4];
@@ -47,6 +59,7 @@ var lightq2 = function () {
 }
 
 var darkq2 = function () {
+	// $('#initial').slideUp(1000);
 	// delete array[0];
 	// delete array[3];
 	// delete array[7];
@@ -135,21 +148,37 @@ var darkNotSingerq2 = function () {
 }
 
 var Roy = function () {
-	window.open("rewards/Roy.html");
+	reward (Roy);
 }
 
 var Ray = function () {
-	window.open("rewards/Ray.html");
+	reward (Ray);
 }
 
 var Mya = function () {
-	window.open("rewards/Mya.html");
-}
+	reward (Mya);}
 
 var Rihanna = function () {
-	window.open("rewards/Rihanna.html");
+	reward (Rihanna);
 }
 
+
+
+
+
+
+
+
+
+
+// if (person == Rihanna) {
+// 	var bec
+//  		beckyIs=$('<img src="http://i.embed.ly/1/display/resize?key=1e6a1a1efdb011df84894040444cdc60&url=http%3A%2F%2Fpbs.twimg.com%2Fmedia%2FByYImH5IEAA-3K5.jpg">');
+//  	} else if (person ==="Rachel Roy") {
+//  		beckyIs=$('<img src ="https://i.kinja-img.com/gawker-media/image/upload/dkao5pp3lx1bzu6wzwhy.jpg">');
+//  	} else if (person ==="Rachel Ray") {
+//  		beckyIs=$('<img src="http://starcasm.net/wp-content/uploads/2016/04/Rachel_Ray_Beyhive_Instagram_photo-490x330.jpg">');
+//  	} else if (person ==="Donald Trump"){
 
 
 // var nextQues1 = function() {

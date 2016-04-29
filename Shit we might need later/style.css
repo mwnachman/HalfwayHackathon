@@ -10,6 +10,10 @@ body {
 	overflow:auto;
 	}
 
+#logo {
+	margin: 0 auto;
+}
+
 #logo img{
 	height: 100px;
 	width: 100px;
@@ -17,19 +21,23 @@ body {
 	margin-left: 10px;
 }
 
-#nav{
+/*#mav{
 	width: 960px;
-}
-#logo{
+}*/
+/*#logo{
 	width: 960px;
+}*/
+#nav {
+	display: flex;
+	justify-content: space-around;
 }
-
 #nav ul {
        display: flex;
        list-style: none;
        justify-content: space-around;
-       padding: 10px;
-       padding-left: 70px;
+	   margin-top: -20px;
+	   padding-left: 0px;
+
 
      }
 
@@ -42,7 +50,7 @@ body {
 	border-radius: 10px;
 	font-size: 20px;
 	display: inline;
-	margin-left: 80px;
+	margin-left: 20px;
 	margin-bottom:8px;
 }
 
@@ -52,16 +60,16 @@ body {
     border-bottom: 8px solid black;
     margin-left: -8px;
     margin-top: -10px;
-    height: 120px;
     z-index: 100;
+	text-align: center;
 }
 
 
-#center {
-	margin-bottom: -25px;
-	margin-top: 15px;
-	margin-left: 360px;
+@media (max-width: 632px) {
+	#content, aside {
+		margin-top: 400px;
 
+	}
 
 }
 
@@ -74,6 +82,7 @@ body {
 	margin-top:117px;
 	position:fixed;
 }
+
 
 #content {
 	font-family:fantasy;

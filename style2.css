@@ -2,6 +2,17 @@ body {
 	background-image: url("images/honeycomb.jpg");
 }
 
+span {
+	margin-left: 0px;
+	margin-right: 20px;
+
+}
+
+input {
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
 #container {
 	margin: 0 auto;
 	font-family:fantasy;
@@ -10,26 +21,49 @@ body {
 	overflow:auto;
 	}
 
+#logo {
+	margin: 0 auto;
+}
+
 #logo img{
 	height: 100px;
 	width: 100px;
 	float:left;
 	margin-left: 10px;
 }
-
-#nav{
-	width: 960px;
-}
-#logo{
-	width: 960px;
+#beckyQuiz{
+	border: 8px solid black;
+	max-width: 75%;
 }
 
+.invisible {
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+
+.visible {
+	width: auto;
+	height: auto;
+}
+/*#nav{
+	width: 960px;
+}*/
+/*#logo{
+	width: 960px;
+}*/
+#nav {
+	display: flex;
+	justify-content: space-around;
+}
 #nav ul {
        display: flex;
        list-style: none;
        justify-content: space-around;
-       padding: 10px;
-       padding-left: 70px;
+	   margin-top: -20px;
+	   padding-left: 0px;
+
 
      }
 
@@ -42,7 +76,7 @@ body {
 	border-radius: 10px;
 	font-size: 20px;
 	display: inline;
-	margin-left: 80px;
+	margin-left: 20px;
 	margin-bottom:8px;
 }
 
@@ -52,16 +86,16 @@ body {
     border-bottom: 8px solid black;
     margin-left: -8px;
     margin-top: -10px;
-    height: 120px;
     z-index: 100;
+	text-align: center;
 }
 
 
-#center {
-	margin-bottom: -25px;
-	margin-top: 15px;
-	margin-left: 360px;
+@media (max-width: 632px) {
+	#content, aside {
+		margin-top: 400px;
 
+	}
 
 }
 
@@ -71,7 +105,7 @@ body {
 	height: 100%;
 	border-right: 8px solid black;
 	margin-left: -10px;
-	margin-top:117px;
+	margin-top:140px;
 	position:fixed;
 }
 
@@ -79,8 +113,8 @@ body {
 	font-family:fantasy;
 	max-width: 75%;
     float: left;
-    margin-left:250px;
-    margin-top:165px;
+	margin-left:250px;
+    margin-top:185px;
     padding: 10px;
     border: 8px solid black;
 
@@ -93,16 +127,31 @@ body {
 }
 
 #beckyContent{
+	font-size: 24px;
+	text-align: center;
+	text-indent: -40px;
 	border: 8px solid black;
-	width: 75%;
-	height: 90vh;
-	margin: 200px auto 200px 300px;
+	width: 60%;
+	min-height: 550px;
+	margin-left:250px;
+    margin-top:185px;
+    padding-left: 30px;
+    padding-top: 55px;
+    overflow: hidden;
 }
 
-#beckyContent img {
-	width: 100%;
-	height: 100%;
 
+#reward {
+	border: 4px solid black;
+	max-height: auto;
+	margin-left: -25px;
+	width: 80%;
+}
+
+
+#beckyIs{
+	margin-top:-30px;
+	margin-bottom:10px;
 }
 
 #button{
@@ -135,11 +184,11 @@ body {
 	line-height: 0;
 	float: left;
 	max-width: 80%;
-	max-height: 450px;
-    margin-left:250px;
-    margin-top:165px;
+	max-height: 400px;
+	margin-left:250px;
+    margin-top:185px;
     overflow: hidden;
-    cursor: url("images/lemon1.gif"), auto;
+    /*cursor: url("images/lemon1.gif"), auto;*/
 }
 
 #switcheroo:active {
