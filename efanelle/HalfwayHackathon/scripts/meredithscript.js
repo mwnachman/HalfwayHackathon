@@ -1,57 +1,178 @@
+ 
+// var TS = "Taylor Swift"
+// var Roy = "Rachel Roy"
+// var Ray = "Rachael Ray"
+// var DT = "Donald Trump"
+// var Mya = "Mya"
+// var Ri = "Rihanna"
+// var Aunt = "Aunt Becky"
+// var Fab = "Fabio"
+// var RO = "Rita Ora"
+// var HC = "Hillary Clinton"
 
-var TS = "Taylor Swift"
-var Roy = "Rachel Roy"
-var Ray = "Rachel Ray"
-var DT = "Donald Trump"
-var Mya = "Mya"
-var Ri = "Rihanna"
-var Aunt = "Aunt Becky"
-var Fab = "Fabio"
-var RO = "Rita Ora"
-var HC = "Hillary Clinton"
+// var array = [TS, Roy, Ray, DT, Mya, Ri, Aunt, Fab, RO, HC]
 
-var array = [TS, Roy, Ray, DT, Mya, Ri, Aunt, Fab, RO, HC]
+// var On = function(name_id) {
+// 	var name = "'" + name_id + "'";
+// 	document.getElementById(name).style.width = "auto";
+// 	document.getElementById(name).style.width = "auto";
+// }
 
-
-
+// var Off = function(name_id) {
+// 	var name = "'" + name_id + "'";
+// 	document.getElementById(name).style.width = 0;
+// 	document.getElementById(name).style.width = "0";
+// }
 
 
-
-
-var lightq2 = function() {
-	delete array[1];
-	delete array[2];
-	delete array[4];
-	delete array[5];
-	delete array[6];
-	document.getElementById('first').setAttribute('class', "visible");
-	document.getElementById('button1').setAttribute('class', "invisible");
-	document.getElementById('button2').setAttribute('class', "visible");
+var lightq2 = function () {
+	// delete array[1];
+	// delete array[2];
+	// delete array[4];
+	// delete array[5];
+	// delete array[6];
+	// Off(sixth);
+	// On(first);
+	// document.getElementById('sixth').style.width = "0";
+	// document.getElementById('sixth').style.height = "0";
+	// document.getElementById('first').style.width = "auto";
+	// document.getElementById('first').style.height = "auto";
+	document.getElementById('sixth').setAttribute('class', 'invisible');
+	document.getElementById('first').setAttribute('class', 'visible');
+	// document.getElementById('initial').disabled = true;
+	var element = document.getElementById('q1b1');
+	element.parentNode.removeChild(element);
+	var element = document.getElementById('q1b2');
+	element.parentNode.removeChild(element);
 }
 
-var darkq2 = function() {
-	delete array[0];
-	delete array[3];
-	delete array[7];
-	delete array[8];
-	delete array[9];
-
+var darkq2 = function () {
+	// delete array[0];
+	// delete array[3];
+	// delete array[7];
+	// delete array[8];
+	// delete array[9];
+	document.getElementById('first').setAttribute('class', 'invisible');
+	document.getElementById('sixth').setAttribute('class', 'visible');
+	var element = document.getElementById('q1a1');
+	element.parentNode.removeChild(element);
+	var element = document.getElementById('q1a2');
+	element.parentNode.removeChild(element);
+	// document.getElementById('first').style.width = "0";
+	// document.getElementById('first').style.height = "0";
+	// document.getElementById('sixth').style.width = "auto";
+	// document.getElementById('sixth').style.height = "auto";
+	// Off(first);
+	// On(fourth);
 }
 
-var nextQues1 = function() {
-	var hColor = $('input[value="Light"]:checked').val();
-	hColor ? lightq2(): darkq2();
+var lightNYq3 = function () {
+	// delete array[6];
+	// delete array[7];
+	// delete array[8];
+	document.getElementById('fourth').setAttribute('class', 'invisible');
+	document.getElementById('second').setAttribute('class', 'visible');
+	// document.getElementById('fourth').style.width = "0";
+	// document.getElementById('fourth').style.height = "0";
+	// document.getElementById('second').style.width = "auto";
+	// document.getElementById('second').style.height = "auto";
+	// document.getElementById('first').disabled = true;
+}
+
+var lightLAq3 = function () {
+	// delete array[0];
+	// delete array[3];
+	// delete array[0];
+	document.getElementById('second').setAttribute('class', 'invisible');
+	document.getElementById('fourth').setAttribute('class', 'visible');
+	// document.getElementById('second').style.width = "0";
+	// document.getElementById('second').style.height = "0";
+	// document.getElementById('fourth').style.width = "auto";
+	// document.getElementById('fourth').style.height = "auto";
+	// document.getElementById("first").disabled;
+}
+
+var lightNYsingerq4 = function () {
+	window.open("rewards/TS.html", replace = true);
+}
+
+var lightNYnotSingerq4 = function () {
+	document.getElementById('third').setAttribute('class', 'visible');
+}
+
+var deletedEmails = function () {
+	window.open("rewards/HC.html");
+}
+
+var notDeletedEmails = function () {
+	window.open("rewards/DT.html");
+} 
+
+var lightLA30q4 = function () {
+	document.getElementById('fifth').setAttribute('class', 'visible');
+}
+
+var Rita = function () {
+	window.open("rewards/RO.html");
+}
+
+var AuntBecky = function () {
+	window.open("rewards/Aunt.html");
+}
+
+var Fabio = function () {
+	window.open("rewards/Fabio.html");
+}
+
+var darkSingerq2 = function () {
+	document.getElementById('seventh').setAttribute('class', 'invisible');
+	document.getElementById('eighth').setAttribute('class', 'visible');
+}
+
+var darkNotSingerq2 = function () {
+	document.getElementById('eighth').setAttribute('class', 'invisible');
+	document.getElementById('seventh').setAttribute('class', 'visible');
+}
+
+var Roy = function () {
+	window.open("rewards/Roy.html");
+}
+
+var Ray = function () {
+	window.open("rewards/Ray.html");
+}
+
+var Mya = function () {
+	window.open("rewards/Mya.html");
+}
+
+var Rihanna = function () {
+	window.open("rewards/Rihanna.html");
 }
 
 
 
+// var nextQues1 = function() {
+// 	var hColor = $('input[value="Light"]:checked').val();
+// 	hColor ? lightq2(): darkq2();
+// }
 
 
 
 
+// $('#button1').submit(nextQues1(e){
+// 	e.preventDefault();
+// }
 
+// $("#button1").click(function() {}
 
+//     var self = this;
+//     $('#toggleText').slideUp('fast', function() {
+//          self.form.submit();
+//     });
+// });
 
+// onclick="nextQues1()
 
 
 
