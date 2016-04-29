@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+	<title> OMG Becky </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="meredithcss.css">
+	<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+
+   <div id="questions">
+
+	<div id="initial" class="visible">
+
+		<p>What color hair does "Becky" have?</p>
+		<form id="q1">
+			<input type="radio" name="hColor" value="Light"><span>Light</span></input>
+			<input type="radio" name="hColor" value="Dark"><span>Dark</span></input>
+			<button id="button1" class="visible" onclick="nextQues1()">Submit</button>
+		</form>
+
+	</div>
+
+	<div id="first" class="invisible">
+
+		<p>Where does "Becky" live?</p>
+		<form>
+			<input type="radio" name="lives" value="NewYork" onclick=><span>New York</span></input>
+			<input type="radio" name="lives" value="Elsewhere"><span>Elsewhere</span></input>
+			<button id="button2" class="invisible" onclick="nextQues2()">Submit</button>
+		</form>
+
+	</div>
+
+	<div id="second" class="invisible">
+
+		<p>Is "Becky" a singer?</p>
+		<form>
+			<input type="radio" name="singer" value="yes"><span>Yes</span></input>
+			<input type="radio" name="singer" value="no"><span>No</span></input>
+		</form>
+
+	</div>
+
+	<div id="third" class="invisible">
+
+		<p>Has "Becky" deleted all emails with Jay-Z?</p>
+		<form>
+			<input type="radio" name="emails" value="yes"><span>Yes</span></input>
+			<input type="radio" name="emails" value="no"><span>No</span></input>
+		</form>	<p>Where does "Becky" live?</p>
+
+	</div>
+
+	<div id="fourth" class="invisible">
+
+		<form>
+			<input type="radio" name="strip" value="yes"><span>Yes</span></input>
+			<input type="radio" name="strip" value="no"><span>No</span></input>
+		</form>
+		
+
+	</div>
+
+	<div id="fifth" class="invisible">
+
+		<p>Is "Becky" over 30 years old?</p>
+		<form>
+			<input type="radio" name="over30" value="yes"><span>Yes</span></input>
+			<input type="radio" name="over30" value="no"><span>No</span></input>
+		</form>
+
+	</div>
+
+	<div id="sixth" class="invisible">
+
+		<p>Is "Becky" a celebrity?</p>
+		<form>
+			<input type="radio" name="celeb" value="yes"><span>Yes</span></input>
+			<input type="radio" name="celeb" value="no"><span>No</span></input>
+		</form>
+
+	</div>
+
+   </div>
+
+
+	<div id="result">
+
+		<img id="reward">
+
+	</div>
+
+</div>
+
+	<script src="scripts/meredithscript.js"></script>
+
+</body>
+</html>

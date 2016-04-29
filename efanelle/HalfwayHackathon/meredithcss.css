@@ -1,0 +1,37 @@
+
+.invisible {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+/*#first {
+	display: none;
+}
+
+#second {
+	display: none;
+}
+
+#third {
+	display: none;
+}
+
+#fourth {
+	display: none;
+}
+
+#fifth {
+	display: none;
+}
+
+#sixth {
+	display: none;
+}
+*/
+button {
+	display: block;
+	margin-top: 15px;
+}
